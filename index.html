@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone | Твоє ігрове ком'юніті</title>
+    <style>
+        :root {
+            --discord-color: #5865F2;
+            --bg-dark: #0f0f13;
+            --card-bg: #1e1e26;
+            --text-light: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0,0,0,0.5);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--discord-color);
+        }
+
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=2070') center/cover;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        .btn-join {
+            background-color: var(--discord-color);
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: transform 0.3s;
+        }
+
+        .btn-join:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(88, 101, 242, 0.5);
+        }
+
+        .games-section {
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border: 1px solid var(--discord-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">GAMEZONE</div>
+    <nav>
+        <a href="#about" style="color: white; text-decoration: none; margin-left: 20px;">Про нас</a>
+        <a href="#games" style="color: white; text-decoration: none; margin-left: 20px;">Ігри</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Знайди свою команду</h1>
+    <p>Найкращий Discord сервер для геймерів в Україні. Спілкуйся, грай, перемагай.</p>
+    <br>
+    <a href="https://discord.gg/CfMBAndX" class="btn-join">Приєднатися до Discord</a>
+</section>
+
+<section id="games" class="games-section">
+    <h2>Наші основні дисципліни</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Shooters</h3>
+            <p>CS2, Valorant, Apex Legends. Знайди тімейтів для рейтингу.</p>
+        </div>
+        <div class="card">
+            <h3>RPG & MMO</h3>
+            <p>Genshin Impact, WoW, Diablo. Спільні рейди та обмін досвідом.</p>
+        </div>
+        <div class="card">
+            <h3>Survival</h3>
+            <p>Rust, Minecraft, DayZ. Будуй та виживай разом з нами.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    &copy; 2026 GameZone Discord Server. Всі права захищені.
+</footer>
+
+</body>
+</html>

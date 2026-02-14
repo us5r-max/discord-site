@@ -1,0 +1,43 @@
+body {
+    background-color: #0f1012; /* Глибокий темний колір */
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.hero-section {
+    background: rgba(44, 47, 51, 0.4);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #5865F2; /* Рамка кольору Discord */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.discord-button {
+    display: inline-block;
+    background-color: #5865F2;
+    color: white;
+    padding: 18px 35px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(88, 101, 242, 0.4);
+}
+
+.discord-button:hover {
+    background-color: #4752c4;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(88, 101, 242, 0.6);
+}
+
+.stats span {
+    color: #3ba55c; /* Зелений колір "Online" */
+    font-weight: bold;
+}
